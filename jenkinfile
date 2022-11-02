@@ -1,5 +1,17 @@
-      stage('Hello') {
-         steps {
-            echo 'Hello World'
-         }
-      }
+pipeline{
+
+agent any
+
+stages{
+		stage('Build'){
+
+			steps{ "echo compile"}
+			}
+		stage('Deploy'){
+
+			steps{ "echo Deploy"}
+
+		}
+
+	}
+	}
