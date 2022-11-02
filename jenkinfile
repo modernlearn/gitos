@@ -1,17 +1,11 @@
-pipeline{
+pipeline {
+    agent any
 
-agent any
-
-stages{
-		stage('Build'){
-
-			steps{ "echo compile"}
-			}
-		stage('Deploy'){
-
-			steps{ "echo Deploy"}
-
-		}
-
-	}
-	}
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
