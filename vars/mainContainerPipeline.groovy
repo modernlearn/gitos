@@ -2,7 +2,7 @@
 import  groovy.transform.Field
 
 
-def call(String name = 'human') {
-  echo "Hello, ${name}."
+def call(Map propertyInfo) {
+  echo "Hello, ${propertyInfo.label}."
 }
 
