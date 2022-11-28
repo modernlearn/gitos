@@ -5,6 +5,6 @@ node {
      def map = [name: "Jerry", age: 42, label: "New York"]
      mainContainerPipeline(map)
      echo "${isParameter}"
-     checkout scm
+
  }
 }
