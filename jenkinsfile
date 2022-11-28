@@ -1,10 +1,7 @@
- @Library('jenkinsPipeline')_
 node {
  stage('Demo') {
      echo 'Hello world'
-     def map = [name: "Jerry", age: 42, label: "New York"]
-     mainContainerPipeline(map)
-     echo "${isParameter}"
+
 
  }
 }
