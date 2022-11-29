@@ -1,7 +1,5 @@
 #!/usr/bin/groovy
-pipeline {
-
-   stages {
+node {
        stage('write') {
            steps {
                script {
@@ -21,4 +19,3 @@ pipeline {
            }
        }
    }
-}
