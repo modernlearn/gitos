@@ -2,6 +2,7 @@
 node {
        stage('write') {
   
+              checkout scm
                script {
                    def date = new Date()
                    def data = "Hello World\nSecond line\n" + date
@@ -10,6 +11,9 @@ node {
                       
                    def datax = readFile(file: 'zorg.txt')
                    println(datax)
+                   def datay = readFile(file: 'data.json')
+                    println(datax)
+                   
                       
                }
            
