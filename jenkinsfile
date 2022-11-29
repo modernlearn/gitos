@@ -7,15 +7,12 @@ node {
                    def data = "Hello World\nSecond line\n" + date
                    writeFile(file: 'zorg.txt', text: data)
                    sh "ls -l"
+                      
+                   def datax = readFile(file: 'zorg.txt')
+                   println(datax)
+                      
                }
            }
        }
-       stage('read') {
-           steps {
-               script {
-                   def data = readFile(file: 'zorg.txt')
-                   println(data)
-               }
-           }
-       }
+
    }
