@@ -2,7 +2,7 @@
 node {
        stage('write') {
   
-              checkout scm
+         
                script {
                    def date = new Date()
                    def data = "Hello World\nSecond line\n" + date
