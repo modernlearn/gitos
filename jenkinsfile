@@ -12,7 +12,7 @@ node {
                    def datax = readFile(file: 'zorg.txt')
                    println(datax)
                    def datay = readFile(file: 'data.json')
-                    println(datax)
+                    println(datay)
                    
                       
                }
