@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 node {
        stage('write') {
-           steps {
+  
                script {
                    def date = new Date()
                    def data = "Hello World\nSecond line\n" + date
@@ -12,7 +12,7 @@ node {
                    println(datax)
                       
                }
-           }
+           
        }
 
    }
