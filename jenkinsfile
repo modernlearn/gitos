@@ -12,6 +12,8 @@ node {
                    def datax = readFile(file: 'zorg.txt')
                    println(datax)
                       def datay = readFile(file: "${filePath}")
+                     print  "${filePath}"      
+                           print  "printing content"      
                     println(datay)
                    
                       
