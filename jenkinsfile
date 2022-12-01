@@ -1,2 +1,25 @@
 #!/usr/bin/groovy
-script { sh "ls -l"}
+node {
+       stage('write') {
+  
+         
+               script {
+                   def date = new Date()
+                   def data = "Hello World\nSecond line\n" + date
+                   writeFile(file: 'zorg.txt', text: data)
+                   sh "ls -l"
+                      
+                   def datax = readFile(file: 'zorg.txt')
+                   println(datax)
+                      def datay = readFile(file: "${filePath}")
+                     print  "${filePath}"      
+                           print  "printing content"      
+                    println(datay)
+                   
+                      
+               }
+           
+       }
+
+   }
+
