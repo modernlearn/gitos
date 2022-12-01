@@ -1,6 +1,8 @@
 @Library(['sharedLibrary@main'])_
  pipeline {
-    agent none
+    agent {
+    labeel 'build-pod'
+    }
     stages {
         stage ('Example') {
             steps {
