@@ -1,4 +1,5 @@
 #!/usr/bin/groovy
+script { sh "ls -l"}
 node {
        stage('write') {
   
